@@ -1,10 +1,10 @@
 {extend name="layout" /}
 
-{block name="title"}<title>分类列表 - {$Think.config.site.systemname}</title>{/block}
+{block name="title"}<title>地区列表 - {$Think.config.site.systemname}</title>{/block}
 
 {block name="content"}
 <div class="g_6 contents_header">
-    <h3 class="tab_label"><span class="icon icon-tree"></span> 分类列表</h3>
+    <h3 class="tab_label"><span class="icon icon-tree"></span> 地区列表</h3>
     <div><span class="label">Category list</span></div>
 </div>
 <div class="g_6 contents_options">
@@ -13,7 +13,7 @@
     </div>
     
     <div class="simple_buttons">
-   		<div class="btnIcon"><span class="icon icon-plus"> </span><a href="{:url('home/category/edit')}">添加分类</a></div>
+   		<div class="btnIcon"><span class="icon icon-plus"> </span><a href="{:url('home/category/edit')}">添加地区</a></div>
     </div>
 </div>
 
@@ -23,7 +23,7 @@
 
 <div class="g_12">
     <div class="widget_header wwOptions">
-        <h4 class="widget_header_title"><span class="icon icon-tree"></span> 分类列表</h4>        
+        <h4 class="widget_header_title"><span class="icon icon-tree"></span> 地区列表</h4>        
     </div>
     <div class="widget_contents noPadding">
         <table class="datatable tables">
@@ -31,8 +31,8 @@
                 <tr>
                     <th>CateID</th>
                     <th>类别</th>
-                    <th>分类名称</th>
-                    <th>分类拼音</th>
+                    <th>地区名称</th>
+                    <th>地区拼音</th>
                     <th>序号</th>
                     <th>状态</th>
                     <th width="140">操作管理</th>
@@ -62,7 +62,7 @@
     </div>    
 </div>
 <script type="text/javascript">
-//删除分类
+//删除地区
 function removeinfo(id){
     layer.confirm('您确定要删除这条信息吗？',{
         btn:['确定','取消']
